@@ -36,3 +36,11 @@ button {
     width: 400px;
     border: 1px solid rgb(163, 163, 163);
 }
+
+.resultado {
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    background-color: gray;
+    width: 100%;
+}

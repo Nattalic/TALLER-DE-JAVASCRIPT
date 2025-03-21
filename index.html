@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -13,30 +12,32 @@
         <div class="general">
         <h1> Calculadora HTML</h1>
 
-        <div class="input">
+        <div class="input" id="operador1">
             <input type="text" placeholder="Operador 1">
         </div>
 
-        <div class="operador">
+        <div class="operador" id="operadores">
             <input type="text" placeholder="+,-,*,/">
         </div>
 
-        <div class="input">
+        <div class="input" id="operdador2">
             <input type="text" placeholder="Operador 2">
         </div>
     
     <!--Button---------------------------------------->
 
-        <button class="calcular"> Calcular... </button>
+        <button class="calcular" id="calcular"> Calcular... </button>
 
     <!--linea----------------------------------------->
         <div class="line"></div>
 
 
     <!--Resultado------------------------------------->
-        <div class="resultado"></div>
+        <div class="resultado" id="resultado"></div>
 
         </div>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
