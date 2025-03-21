@@ -1,8 +1,8 @@
 document.getElementById("calcular").addEventListener("click", function() {
-    // Obtener valores de los inputs
-    let op1 = parseFloat(document.getElementById("operador1").querySelector("input").value);
+    // Obtener valores de los inputs usando el operador unario +
+    let op1 = +document.getElementById("operador1").querySelector("input").value;
     let operador = document.getElementById("operadores").querySelector("input").value;
-    let op2 = parseFloat(document.getElementById("operdador2").querySelector("input").value);
+    let op2 = +document.getElementById("operdador2").querySelector("input").value;
     let resultado = document.getElementById("resultado");
 
     // Validar que los valores sean números
@@ -23,12 +23,10 @@ document.getElementById("calcular").addEventListener("click", function() {
     } else if (operador === "/") {
         if (op2 === 0) {
             resultado.textContent = "ERROR: ¡No se puede dividir por cero!";
-            return;
         }
         res = op1 / op2;
     } else {
         resultado.textContent = "ERROR: Operador No Válido!";
-        return;
     }
 
     // Mostrar resultado

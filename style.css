@@ -1,6 +1,6 @@
 .general {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -38,9 +38,15 @@ button {
 }
 
 .resultado {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:700;
+    text-align: center;
     margin-top: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
-    background-color: gray;
+    width: 5px;
+    height: 30px;
+    background-color: rgb(232, 232, 232);
     width: 100%;
 }
