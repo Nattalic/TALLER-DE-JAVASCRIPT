@@ -1,34 +1,31 @@
 document.getElementById("calcular").addEventListener("click", function() {
-    // Obtener valores de los inputs usando el operador unario +
-    let op1 = +document.getElementById("operador1").querySelector("input").value;
-    let operador = document.getElementById("operadores").querySelector("input").value;
-    let op2 = +document.getElementById("operdador2").querySelector("input").value;
+    // Obtener valores de los inputs
+    let op1 = document.getElementById("operador1").value;
+    let operador = document.getElementById("operadores").value;
+    let op2 = document.getElementById("operador2").value;
     let resultado = document.getElementById("resultado");
+    let num1 = Number(op1);
+    let num2 = Number(op2);
 
-    // Validar que los valores sean números
     if (isNaN(op1) || isNaN(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
+        return;
     }
-
-    // Inicializar variable para el resultado
-    let res;
 
     // Validar operador y realizar operación
     if (operador === "+") {
-        res = op1 + op2;
+        resultado.textContent = "Resultado: " + (num1 + num2);
     } else if (operador === "-") {
-        res = op1 - op2;
+        resultado.textContent = "Resultado: " + (num1 - num2);
     } else if (operador === "*") {
-        res = op1 * op2;
+        resultado.textContent = "Resultado: " + (num1 * num2);
     } else if (operador === "/") {
-        if (op2 === 0) {
+        if (num2 === 0) {
             resultado.textContent = "ERROR: ¡No se puede dividir por cero!";
+        } else {
+            resultado.textContent = "Resultado: " + (num1 / num2);
         }
-        res = op1 / op2;
     } else {
         resultado.textContent = "ERROR: Operador No Válido!";
     }
-
-    // Mostrar resultado
-    resultado.textContent = `Resultado: ${res}`;
 });
