@@ -1,3 +1,9 @@
+body {
+    margin: 40px auto; 
+    margin-bottom: 0;
+    max-width: 1200px; 
+}
+
 .general {
     display: flex;
     flex-direction: column;
@@ -28,8 +34,8 @@ input {
 }
 
 button {
-    margin-top: 15px;
-    margin-left: 710px;
+    margin-top: 20px;
+    margin-left: 550px;
     width: 100px;
     padding: 10px;
 }

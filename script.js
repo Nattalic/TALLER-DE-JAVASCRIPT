@@ -1,5 +1,5 @@
 document.getElementById("calcular").addEventListener("click", function() {
-    // Obtener valores de los inputs
+    // OBTENER VARIABLES 
     let op1 = document.getElementById("operador1").value;
     let operador = document.getElementById("operadores").value;
     let op2 = document.getElementById("operador2").value;
@@ -7,8 +7,8 @@ document.getElementById("calcular").addEventListener("click", function() {
     let num1 = Number(op1);
     let num2 = Number(op2);
     
-
-    if (isNaN(op1) || isNaN(op2)) {
+    // VALIDAR SI ES UN NUMERO
+    if (parseInt(op1) || parseInt(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
         return;
     }
