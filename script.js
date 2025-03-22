@@ -6,6 +6,7 @@ document.getElementById("calcular").addEventListener("click", function() {
     let resultado = document.getElementById("resultado");
     let num1 = Number(op1);
     let num2 = Number(op2);
+    
 
     if (isNaN(op1) || isNaN(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
