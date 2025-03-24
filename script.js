@@ -26,7 +26,7 @@ document.getElementById("calcular").addEventListener("click", function() {
         resultado.textContent = "Resultado: " + (num1 * num2) + " :)";
     } else if (operadores === "/") {
         if (num2 === 0) {
-            resultado.textContent = "ERROR: ¡No se puede dividir por cero!  ❌"; 
+            resultado.textContent = "ERROR: ¡No se puede dividir por cero!  ❌"; //NO DIVIDIR POR CERO
         } else {
             resultado.textContent = "Resultado: " + (num1 / num2) + " :)";
         }
@@ -35,3 +35,4 @@ document.getElementById("calcular").addEventListener("click", function() {
     }
 });
     // FIN
+    
